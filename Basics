@@ -1,0 +1,56 @@
+from solana.rpc.api import Client
+from solana.transaction import Transaction
+from solana.publickey import PublicKey
+from solana.system_program import SYS_PROGRAM_ID, create_account
+from solana.keypair import Keypair
+from solana.rpc.types import TxOpts
+
+# Connect to Solana Devnet
+solana_client = Client("https://api.devnet.solana.com")
+
+# Generate a new keypair (or load an existing one)
+new_account = Keypair.generate()
+
+# Your wallet/private key (payer for transaction)
+payer = Keypair.from_secret_key(bytes([YOUR_SECRET_KEY_HERE]))  # Replace with your secret key
+
+# Program ID of the Solana program to which you are importing data
+program_id = PublicKey("YourProgramIDHere")  # Replace with the actual program ID
+
+# Define the data to import (convert to bytes)
+data = b"Hello, Solana! This is imported data."
+
+# Define the account to hold the data
+account_size = len(data)
+lamports = solana_client.get_minimum_balance_for_rent_exemption(account_size)["result"]
+
+# Create a transaction to create an account and add data
+transaction = Transaction()
+transaction.add(
+    create_account(
+        from_pubkey=payer.public_key,
+        new_account_pubkey=new_account.public_key,
+        lamports=lamports,
+        space=account_size,
+        program_id=program_id,
+    )
+)
+
+# Add instruction to populate the account with data
+transaction.add(
+    TransactionInstruction(
+        keys=[
+            {"pubkey": new_account.public_key, "is_signer": True, "is_writable": True}
+        ],
+        program_id=program_id,
+        data=data,
+    )
+)
+
+# Send the transaction
+response = solana_client.send_transaction(
+    transaction, payer, new_account, opts=TxOpts(skip_preflight=True)
+)
+
+# Output the transaction signature
+print("Transaction Signature:", response["result"])
