@@ -10,6 +10,8 @@ Cinipe is an advanced AI-powered agent built on the Solana blockchain, pushing t
 ## 🤖 AI-Driven Identity
 
 *Intelligent Dialogues with Context Recall
+
 *Enhanced Sentiment Detection for Realistic Interactions
+
 *Real-Time Content Creation and Optimization
 
