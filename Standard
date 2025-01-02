@@ -1,0 +1,29 @@
+ublic static void main(String[] args) {
+        // Introduction to Solana
+        System.out.println("===== What is Solana? =====");
+        System.out.println();
+        System.out.println("Solana is a high-performance blockchain platform known for:");
+        System.out.println("1. Fast transaction speeds.");
+        System.out.println("2. Low transaction costs.");
+        System.out.println("3. Scalability through innovative consensus mechanisms.");
+        System.out.println();
+        
+        // Key features of Solana
+        System.out.println("===== fres =====");
+        System.out.println("1. Proof of History (PoH): A unique mechanism that improves efficiency and throughput.");
+        System.out.println("2. High Throughput: Solana can handle thousands of transactions per second.");
+        System.out.println("3. Decentralization: Operates with a global network of validators.");
+        System.out.println("4. Developer-Friendly: Supports programming languages like Rust and C for smart contracts.");
+        System.out.println();
+        
+        // Use cases
+        System.out.println("===== Use Cases =====");
+        System.out.println("1. Decentralized Finance (DeFi): Powering financial applications without intermediaries.");
+        System.out.println("2. NFTs: Enabling fast and affordable NFT creation and trading.");
+        System.out.println("3. Web3 Applications: Supporting scalable and efficient decentralized apps (dApps).");
+        System.out.println();
+        
+        // Closing message
+        System.out.println("Solana is designed to provide a fast, secure, and scalable blockchain infrastructure.");
+        System.out.println("It’s a popular choice for developers building decentralized applications!");
+    }
