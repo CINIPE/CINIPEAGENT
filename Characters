@@ -1,0 +1,15 @@
+# Random attributes
+races = ["Human", "Elf", "Dwarf", "Orc", "Tiefling", "Halfling"]
+classes = ["Warrior", "Mage", "Rogue", "Cleric", "Paladin", "Ranger"]
+skills = ["Swordsmanship", "Archery", "Alchemy", "Stealth", "Magic", "Crafting"]
+
+# Function to generate random attributes for each character
+def create_characters(names):
+    characters = []
+    for name in names:
+        character = {
+            "Name": name,
+            "Race": random.choice(races),
+            "Class": random.choice(classes),
+            "Primary Skill": random.choice(skills),
+            "Level": random.randint(1, 20),
