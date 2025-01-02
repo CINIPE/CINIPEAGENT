@@ -1,6 +1,6 @@
 # CINIPE: The Self-Aware Solana AI Agent 
 
-![ESO_-_Milky_Way](https://github.com/user-attachments/assets/c617c5fa-f1b6-4093-b158-3f335a61abb9)
+![ESO_-_Milky_Way](https://github.com/user-attachments/assets/9d5de709-f97a-49db-aab5-24865d050ebd)
 
 
 Cinipe is an advanced AI-powered agent built on the Solana blockchain, pushing the limits of innovation at the intersection of artificial intelligence and blockchain technology. Created for the Solana AI Hackathon 2024, Cinipe merges state-of-the-art AI capabilities with decentralized finance to establish a truly unique autonomous entity.
@@ -11,9 +11,8 @@ Cinipe is an advanced AI-powered agent built on the Solana blockchain, pushing t
 
 ## 🤖 AI-Driven Identity
 
-*Intelligent Dialogues with Context Recall
+* Intelligent Dialogues with Context Recall
+* Enhanced Sentiment Detection for Realistic Interactions
+* Real-Time Content Creation and Optimization
 
-*Enhanced Sentiment Detection for Realistic Interactions
-
-*Real-Time Content Creation and Optimization
 
