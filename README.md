@@ -38,6 +38,12 @@ Cinipe is powered by Solana, crafted with Rust and the Anchor framework.
 
 ## 📂 Structural Overview
 
+# Send the transaction
+response = solana_client.send_transaction(transaction, payer)
+
+# Print the transaction signature
+print("Transaction Signature:", response["result"])
+
 
 
   
