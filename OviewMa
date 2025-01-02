@@ -1,0 +1,17 @@
+transaction = Transaction()
+transaction.add(
+    transfer_checked(
+        TransferCheckedParams(
+            program_id=TOKEN_PROGRAM_ID,
+            source=seller_token_account,
+            mint=token_mint_address,
+            dest=payer_token_account,
+            owner=payer.public_key,
+            amount=amount_in_base_units,
+            decimals=decimals,
+        )
+    )
+)
+
+# Send the transaction
+response = client.send_transaction(transaction, payer)
