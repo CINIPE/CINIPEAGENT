@@ -44,6 +44,7 @@ Cinipe is powered by Solana, crafted with Rust and the Anchor framework.
 * Contributions are always appreciated! For more information, please refer to our Contributing Guide.
 
 ## 📄 License
+* This project is licensed under the MIT License - see LICENSE for details.
 
 
 
