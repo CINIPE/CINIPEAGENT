@@ -37,6 +37,14 @@ Cinipe is powered by Solana, crafted with Rust and the Anchor framework.
 
 ## 🤝 Community & Support
 * https://x.com/CinipeAgent
+* Documentation - Technical details
+* Discord - Join our community
+
+## 🤝 Contributing
+* Contributions are always appreciated! For more information, please refer to our Contributing Guide.
+
+## 📄 License
+
 
 
 
